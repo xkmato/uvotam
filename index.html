@@ -1,535 +1,217 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Uvotam</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="Saptavarana" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uvotam | The Future of Storytelling</title>
+  <!-- Primary meta tags -->
+  <meta name="description" content="Uvotam is a creative studio blending music, film, podcasts, events and technology to craft cultural storytelling and immersive experiences.">
+  <meta name="keywords" content="Uvotam, creative studio, music videos, film production, podcasts, events, digital products, storytelling">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://uvotam.com/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#000000">
+  <meta name="author" content="Uvotam">
+  <link rel="alternate" href="https://uvotam.com/" hreflang="en" />
 
-    <link rel="shortcut icon" href="images/favicon.ico" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Uvotam | The Future of Storytelling">
+  <meta property="og:description" content="Uvotam is a creative studio blending music, film, podcasts, events and technology to craft cultural storytelling and immersive experiences.">
+  <meta property="og:url" content="https://uvotam.com/">
+  <meta property="og:site_name" content="Uvotam">
+  <meta property="og:image" content="https://uvotam.com/og-image.png">
 
-    <!-- Magnific-popup -->
-    <link rel="stylesheet" href="css/magnific-popup.css" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@uvotam">
+  <meta name="twitter:creator" content="@uvotam">
+  <meta name="twitter:title" content="Uvotam | The Future of Storytelling">
+  <meta name="twitter:description" content="Uvotam is a creative studio blending music, film, podcasts, events and technology to craft cultural storytelling and immersive experiences.">
+  <meta name="twitter:image" content="https://uvotam.com/og-image.png">
 
-    <!--Slider Css-->
-    <link href="css/owl.carousel.css" rel="stylesheet" />
-    <link href="css/owl.theme.css" rel="stylesheet" />
-    <link href="css/owl.transitions.css" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Uvotam",
+        "url": "https://uvotam.com",
+        "logo": "https://uvotam.com/logo.png",
+        "sameAs": [
+          "https://x.com/uvotam",
+          "https://www.instagram.com/uvotamstudio/",
+          "https://www.youtube.com/@uvotamStudio"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "url": "https://uvotam.com/",
+        "name": "Uvotam",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Uvotam"
+        }
+      }
+    ]
+  }
+  </script>
 
-    <!-- Icon -->
-    <link href="css/mobiriseicons.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      overflow-x: hidden;
+    }
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    .skip-link:focus {
+      left: 1rem;
+      top: 1rem;
+      width: auto;
+      height: auto;
+      padding: 0.5rem 0.75rem;
+      background: white;
+      color: black;
+      border-radius: 0.25rem;
+      z-index: 60;
+    }
+    .pulse-core {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.8), rgba(255,255,255,0));
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: pulse 3s infinite;
+      z-index: 1;
+    }
+    @keyframes pulse {
+      0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.7; }
+      50% { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
+      100% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.7; }
+    }
+    .energy-line {
+      stroke: url(#line-gradient);
+      stroke-width: 2;
+      fill: none;
+      stroke-dasharray: 600;
+      stroke-dashoffset: 600;
+      animation: flow 6s linear infinite;
+      opacity: 0.6;
+    }
+    @keyframes flow {
+      to { stroke-dashoffset: 0; }
+    }
+  </style>
+</head>
+<body>
+    <!-- Hero with Abstract Energy Tree -->
+  <section class="relative flex flex-col items-center justify-center min-h-screen text-center px-6 overflow-hidden">
+    <a href="#branches" class="skip-link">Skip to content</a>
+    <div class="pulse-core"></div>
+    <h1 class="text-5xl md:text-7xl font-bold relative z-10 leading-tight">
+      One Tree. <br> Infinite Branches.
+    </h1>
+    <p class="mt-4 text-lg md:text-2xl max-w-2xl relative z-10">
+      At Uvotam, our creativity grows like a tree—rooted in vision, branching into music, film, podcasts, events, and technology.
+    </p>
+    <div class="mt-8 relative z-10">
+      <a href="#branches" class="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Explore Our Branches</a>
+    </div>
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/materialdesignicons.min.css"
-    />
+    <!-- Animated energy arcs -->
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="absolute inset-0 w-full h-full z-0" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+      <defs>
+        <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#00f9ff"/>
+          <stop offset="100%" stop-color="#ff00f7"/>
+        </linearGradient>
+      </defs>
+      <path d="M50 50 C 40 30, 20 70, 15 100" class="energy-line"/>
+      <path d="M50 50 C 60 20, 80 60, 85 100" class="energy-line"/>
+      <path d="M50 50 C 35 40, 45 80, 30 100" class="energy-line"/>
+      <path d="M50 50 C 65 35, 70 75, 70 100" class="energy-line"/>
+    </svg>
+  </section>
 
-    <!--bootstrap Css-->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
-
-  <body>
-    <!-- START NAVBAR -->
-    <nav class="navbar navbar-expand-lg fixed-top custom_nav_menu sticky">
-      <div class="container">
-        <!-- LOGO -->
-        <a class="navbar-brand logo" href="index.html">
-          <img src="images/logo-2.png" alt="" class="img-fluid logo-light" />
-          <img src="images/logo-dark.png" alt="" class="img-fluid logo-dark" />
-        </a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="mdi mdi-menu"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active">
-              <a href="#home" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#services" class="nav-link">Services</a>
-            </li>
-            <li class="nav-item">
-              <a href="#pricing" class="nav-link">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a href="https://uvotam-portfolio.web.app/" class="nav-link" target="_blank" rel="noopener noreferrer">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-          </ul>
-        </div>
+  <!-- Branching Sections -->
+  <section id="branches" class="relative py-24 px-6 md:px-12 max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 relative z-10">
+      <div class="p-8 rounded-2xl bg-gradient-to-br from-green-700 to-black shadow-lg hover:scale-105 transform transition">
+        <h2 class="text-2xl font-bold mb-4">Music</h2>
+        <p>From music videos to sound design, we bring rhythm and vision together to create unforgettable sonic experiences.</p>
       </div>
-    </nav>
-    <!-- END NAVBAR -->
-
-    <!-- Home Section Start-->
-    <section class="bg_home_cover full_height_100vh_home" id="home">
-      <!-- <div class="bg_overlay_cover_on"></div> -->
-      <div class="home_table_cell">
-        <div class="home_table_cell_center">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="">
-                  <h1 class="home_title text-white text-capitalize mb-0 pt-3">
-                    <span
-                      class="text-typed"
-                      data-elements="We are an indie production company. ,Photography. Videography. Podcasting."
-                    ></span>
-                  </h1>
-                  <div class="home_text_details">
-                    <p class="home_subtitle mt-4 mb-0">
-                      We produce original content, music videos, podcasts. We
-                      also cover weddings, birthdays, and all types of functions
-                    </p>
-                    <p class="home_subtitle mt-4 mb-0">
-                      Come and pitch to us your original ideas and we shall
-                      partner with you to give them life.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="p-8 rounded-2xl bg-gradient-to-br from-blue-700 to-black shadow-lg hover:scale-105 transform transition">
+        <h2 class="text-2xl font-bold mb-4">Film & Storytelling</h2>
+        <p>We craft cinematic narratives that connect deeply, blending art with cultural resonance.</p>
       </div>
-    </section>
-    <!-- Home Section End-->
-
-    <!-- About Start -->
-    <section class="section_all bg-light" id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section_title_all text-center">
-              <div class="section_icons">
-                <i class="mbri-home"></i>
-              </div>
-              <h3 class="mt-3">
-                What Can we Do <span class="text_custom"> For you </span>
-              </h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-lg-4">
-            <div class="about_content_box_all mt-3">
-              <div class="about_detail">
-                <div class="about_icon">
-                  <i class="text_custom mdi mdi-web text-center"></i>
-                </div>
-                <h5 class="text-dark text-capitalize mt-3">
-                  Original Web Content
-                </h5>
-                <p class="edu_desc mt-3 mb-0 text-muted">
-                  We partner with content creators to produce original content.
-                  We also distribute and promote web and social media content
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="about_content_box_all mt-3">
-              <div class="about_detail">
-                <div class="about_icon">
-                  <i class="text_custom mdi mdi-video text-center"></i>
-                </div>
-                <h5 class="text-dark text-capitalize mt-3">Music Video</h5>
-                <p class="edu_desc mb-0 mt-3 text-muted">
-                  Come and make the classiest visuals to accompany your music.
-                  We have a dedicated creative team to plan your next music
-                  video.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="about_content_box_all mt-3">
-              <div class="about_detail">
-                <div class="about_icon">
-                  <i class="text_custom mdi mdi-microphone text-center"></i>
-                </div>
-                <h5 class="text-dark text-capitalize mt-3">podcasts</h5>
-                <p class="edu_desc mb-0 mt-3 text-muted">
-                  We produce the biggest podcast in the country. We can produce
-                  your next podcast too at very pocket friendly prices.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="about_content_box_all mt-3">
-              <div class="about_detail">
-                <div class="about_icon">
-                  <i class="text_custom mdi mdi-calendar text-center"></i>
-                </div>
-                <h5 class="text-dark text-capitalize mt-3">Events</h5>
-                <p class="edu_desc mb-0 mt-3 text-muted">
-                  We cover weddings, birthdays, graduations, and all sorts of
-                  functions. We offer photography and multi camera videography.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="about_content_box_all mt-3">
-              <div class="about_detail">
-                <div class="about_icon">
-                  <i class="text_custom mdi mdi-film text-center"></i>
-                </div>
-                <h5 class="text-dark text-capitalize mt-3">Film</h5>
-                <p class="edu_desc mb-0 mt-3 text-muted">
-                  Do you have a script and wondering if you will ever shoot it.
-                  Reachout today to partner with us to turn your script into a
-                  movie
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="about_content_box_all mt-3">
-              <div class="about_detail">
-                <div class="about_icon">
-                  <i class="text_custom mdi mdi-camera text-center"></i>
-                </div>
-                <h5 class="text-dark text-capitalize mt-3">photography</h5>
-                <p class="edu_desc mb-0 mt-3 text-muted">
-                  Are you looking the moment with a planned studio and outdoor
-                  photoshoot? Look no further. We gotcha.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="p-8 rounded-2xl bg-gradient-to-br from-purple-700 to-black shadow-lg hover:scale-105 transform transition">
+        <h2 class="text-2xl font-bold mb-4">Podcasts</h2>
+        <p>Conversations that matter. We capture voices and ideas shaping the present and the future.</p>
       </div>
-    </section>
-    <!-- About End -->
-
-    <!-- Our Work Process Start -->
-    <section class="section_all bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section_title_all text-center">
-              <div class="section_icons">
-                <i class="mbri-upload"></i>
-              </div>
-              <h3 class="mt-3">
-                We <span class="text_custom"> Guarantee </span>
-              </h3>
-              <p class="section_subtitle mx-auto text-muted">
-                We are commited to supporting tell your stories and solidify
-                your memories.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-lg-3">
-            <div class="business_work_flow text-center p-3">
-              <i class="mdi mdi-checkbox-marked text_custom"></i>
-              <h6 class="mt-3">Quality of work</h6>
-              <p class="text-muted">
-                We will give your work our best. We will pay attention to every
-                little detail of it. You will love what we deliver.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="business_work_flow text-center work_border_left p-3">
-              <i class="mdi mdi-truck text_custom"></i>
-              <h6 class="mt-3">Delivery on time</h6>
-              <p class="text-muted">
-                We shall deliver when we promise to deliver. In those few times
-                when unexpected delays happen, we shall communicate in advance.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="business_work_flow text-center work_border_left p-3">
-              <i class="mdi mdi-poll text_custom"></i>
-              <h6 class="mt-3">Data driven content</h6>
-              <p class="text-muted">
-                We shall share the data we have on how people online interact
-                with original content to help design targeted content.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="business_work_flow text-center work_border_left p-3">
-              <i class="mdi mdi-cash text_custom"></i>
-              <h6 class="mt-3">Money back guarantee</h6>
-              <p class="text-muted">
-                If for some reason, you don't appreciate our work. We promise to
-                give you your money back. No questions asked.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="p-8 rounded-2xl bg-gradient-to-br from-pink-700 to-black shadow-lg hover:scale-105 transform transition">
+        <h2 class="text-2xl font-bold mb-4">Events</h2>
+        <p>Immersive experiences and unforgettable gatherings brought to life through our creative lens.</p>
       </div>
-    </section>
-    <!-- Our Work Process End  -->
-
-    <!-- Pricing Start -->
-    <section class="section_all bg-light" id="pricing">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section_title_all text-center">
-              <div class="section_icons">
-                <i class="mbri-sale"></i>
-              </div>
-              <h3 class="mt-3">
-                Our Pricing <span class="text_custom"> Plans </span>
-              </h3>
-              <h4 class="section_subtitle mx-auto text-muted">
-                Events and Functions.
-              </h4>
-              <p class="section_subtitle mx-auto text-muted">
-                <a
-                  href="https://uvotamstudio.com"
-                  class="btn btn_custom btn_rounded mt-3"
-                  >Check our Pricing Here</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="p-8 rounded-2xl bg-gradient-to-br from-orange-700 to-black shadow-lg hover:scale-105 transform transition">
+        <h2 class="text-2xl font-bold mb-4">Tech & Digital</h2>
+        <p>Innovative apps and platforms designed to connect people and stories in bold new ways.</p>
       </div>
-    </section>
-    <!-- Pricing End -->
-
-    <!-- START CTA -->
-    <section class="section_all bg_buss_call_cta">
-      <div class="bg_overlay_cover_on"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="text-center text-white">
-              <h2 class="">
-                Reachout today on WhatsApp to book us for your next creative
-                endevour
-              </h2>
-              <p class="mx-auto cta_details mt-4 pt-2">
-                We are always sitting by the phone waiting for you to invite us
-                to create with you.
-              </p>
-              <div class="mt-4 pt-3">
-                <a href="#" class="btn btn_custom btn-rounded font-weight-bold"
-                  ><i class="mdi mdi-message"></i> 0753594024
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="p-8 rounded-2xl bg-gradient-to-br from-teal-700 to-black shadow-lg hover:scale-105 transform transition">
+        <h2 class="text-2xl font-bold mb-4">Culture & Activism</h2>
+        <p>We amplify voices, challenge narratives, and shape movements with the power of media.</p>
       </div>
-    </section>
-    <!-- END CTA -->
+    </div>
+  </section>
 
-    <!-- Contact Us Start -->
-    <section class="section_all" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section_title_all text-center">
-              <div class="section_icons">
-                <i class="mbri-contact-form"></i>
-              </div>
-              <h3 class="mt-3">
-                Do You Have Any <span class="text_custom">Question </span>
-              </h3>
-              <p class="section_subtitle mx-auto text-muted">
-                Don't hesitate to reachout to us right now to inquire.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5 vertical_content_manage">
-          <div class="col-lg-5">
-            <div class="contact_info_box mt-3 bg-light p-5">
-              <div class="">
-                <h5 class="text_customt">Contact Info</h5>
-              </div>
-              <div class="contact_details_content mt-4">
-                <div class="contact_detail">
-                  <h6 class="text_custom">Address</h6>
-                  <p class="text-muted mb-0">
-                    0300 Shrine Drive. <br />Naalya, Kampala
-                  </p>
-                </div>
-              </div>
+  <!-- Visionary Statement -->
+  <section class="py-24 px-6 bg-gradient-to-t from-black to-gray-900 text-center">
+    <h2 class="text-4xl md:text-6xl font-bold mb-6 tracking-wide">Attention is non-linear. It spreads like a tree</h2>
+    <p class="max-w-3xl mx-auto text-lg md:text-xl">
+      Like a tree rooted deep in the earth, our work is grounded in authenticity, culture, and creativity. Yet every branch extends outward, exploring new horizons of storytelling, technology, and impact.
+    </p>
+  </section>
 
-              <div class="contact_details_content mt-4">
-                <div class="contact_detail">
-                  <h6 class="text_custom">Mail</h6>
-                  <p class="text-muted mb-0">kenneth[@]uvotamstudio.com</p>
-                </div>
-              </div>
-
-              <div class="contact_details_content mt-4">
-                <div class="contact_detail">
-                  <h6 class="text_custom">Call or WhatsApp</h6>
-                  <p class="text-muted mb-0">0753594024, <br />0785149967.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="business_form_custom mt-3">
-              <form>
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="form-group mt-3">
-                      <input
-                        name="name"
-                        id="name"
-                        type="text"
-                        class="form-control"
-                        placeholder="Your name..."
-                        required=""
-                      />
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="form-group mt-3">
-                      <input
-                        name="email"
-                        id="email"
-                        type="email"
-                        class="form-control"
-                        placeholder="Your email..."
-                        required=""
-                      />
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="form-group mt-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="subject"
-                        placeholder="Your Subject.."
-                        required=""
-                      />
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="form-group mt-3">
-                      <textarea
-                        name="comments"
-                        id="comments"
-                        rows="4"
-                        class="form-control"
-                        placeholder="Your message..."
-                        required=""
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12">
-                    <input
-                      type="submit"
-                      class="btn btn_custom"
-                      value="Send Message"
-                    />
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact Us End -->
-
-    <!-- Footer Start -->
-    <section class="section_all bg_footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="business_footer_logo mt-3">
-              <img
-                src="images/logo-dark.png"
-                alt=""
-                class="img-fluid mx-auto d-block"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-lg-12">
-            <div class="text-center mt-3">
-              <p class="footer_alt_cpy mb-0">2021 &copy; Uvotam</p>
-            </div>
-            <div class="text-center buss_icon_social_footer mt-3">
-              <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <a href="https://twitter.com/uvotam" class=""
-                ><i class="mdi mdi-twitter"></i
-                ></a>
-              </li>
-              <li class="list-inline-item"></li>
-                <a href="https://work.uvotam.com" class="" target="_blank" rel="noopener noreferrer"
-                ><i class="mdi mdi-briefcase"></i
-                ></a>
-              </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Footer End -->
-
-    <!-- JAVASCRIPTS -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!--TESTISLIDER JS-->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/scrollspy.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/typed.js"></script>
-    <script src="js/custom.js"></script>
-    <script>
-      $(".text-typed").each(function () {
-        var $this = $(this);
-        $this.typed({
-          strings: $this.attr("data-elements").split(","),
-          typeSpeed: 100, // typing speed
-          backDelay: 3000, // pause before backspacing
-        });
-      });
-    </script>
-  </body>
+  <!-- Footer -->
+  <footer class="py-12 text-center bg-black border-t border-gray-800">
+    <p class="mb-4">&copy; 2025 Uvotam. All Rights Reserved.</p>
+    <div class="flex justify-center space-x-6">
+      <a href="https://work.uvotam.com" class="hover:text-gray-400">Our Work</a>
+      <a href="https://uvotamstudio.com" class="hover:text-gray-400">Our Pricing</a>
+      <a href="mailto:hello@uvotamstudio.com" class="hover:text-gray-400">Talk to Us</a>
+    </div>
+    <div class="flex justify-center space-x-6">
+      <a href="https://x.com/uvotam" class="hover:text-gray-400" aria-label="X (Twitter)" title="X (Twitter)">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 4 L20 20 M20 4 L4 20" />
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/uvotamstudio/" class="hover:text-gray-400" aria-label="Instagram" title="Instagram">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5" />
+          <circle cx="12" cy="12" r="3" />
+          <circle cx="17.5" cy="6.5" r="0.75" fill="currentColor" stroke="none" />
+        </svg>
+      </a>
+      <a href="https://www.youtube.com/@uvotamStudio" class="hover:text-gray-400" aria-label="YouTube" title="YouTube">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="6" width="20" height="12" rx="2" />
+          <polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+</body>
 </html>

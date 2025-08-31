@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://uvotamstudio.com/sitemap.xml
+# Crawl-delay not set — tune with your analytics if needed
