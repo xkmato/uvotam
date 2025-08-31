@@ -60,6 +60,11 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    :root {
+      /* tweak these two values to slow/speed animations */
+      --pulse-duration: 28s; /* originally 3s */
+      --flow-duration: 60s; /* originally 6s */
+    }
     body {
       background: black;
       color: white;
@@ -94,7 +99,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      animation: pulse 3s infinite;
+      animation: pulse var(--pulse-duration) infinite;
       z-index: 1;
     }
     @keyframes pulse {
@@ -108,11 +113,18 @@
       fill: none;
       stroke-dasharray: 600;
       stroke-dashoffset: 600;
-      animation: flow 6s linear infinite;
+      animation: flow var(--flow-duration) linear infinite;
       opacity: 0.6;
     }
     @keyframes flow {
       to { stroke-dashoffset: 0; }
+    }
+    /* Respect user preference for reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      .pulse-core,
+      .energy-line {
+        animation: none !important;
+      }
     }
   </style>
 </head>
